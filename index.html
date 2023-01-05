@@ -1,0 +1,244 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>DashBoard1</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fa-brands fa-apple"></i></span>
+              <span class="title"><h2>Brand Name</h2></span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fa-solid fa-house"></i></span>
+              <span class="title">Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fa-solid fa-users"></i></span>
+              <span class="title">Customers</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fa-solid fa-comment"></i></span>
+              <span class="title">Messages</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fa-solid fa-circle-question"></i></span>
+              <span class="title">help</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fa-solid fa-gear"></i></span>
+              <span class="title">Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fa-solid fa-lock"></i></span>
+              <span class="title">Password</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon"><i class="fa-solid fa-right-from-bracket"></i></span>
+              <span class="title">Sign out</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="topBar">
+          <div class="toggle"></div>
+          <div class="search">
+            <label for="">
+              <input type="text" placeholder="Search here" />
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </label>
+          </div>
+          <div class="user">
+            <img src="image/user.jpg" alt="" />
+          </div>
+        </div>
+        <!-- Card Box -->
+        <div class="cardBox">
+          <div class="card">
+            <div>
+              <div class="numbers">1,042</div>
+              <div class="cardName">Daily Views</div>
+            </div>
+            <div class="iconBox">
+              <i class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">80</div>
+              <div class="cardName">Sales</div>
+            </div>
+            <div class="iconBox">
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">208</div>
+              <div class="cardName">Comments</div>
+            </div>
+            <div class="iconBox">
+              <i class="fa fa-comment" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="card">
+            <div>
+              <div class="numbers">$6,042</div>
+              <div class="cardName">Earning</div>
+            </div>
+            <div class="iconBox">
+              <i class="fa fa-usd" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+        <!-- Charts Section  -->
+        <div class="graphBox">
+          <div class="box"><canvas id="myChart"></canvas></div>
+          <div class="box"><canvas id="earning"></canvas></div>
+        </div>
+        <!-- Details Section  -->
+        <div class="details">
+          <div class="recentOrders">
+            <div class="cardHeader">
+              <h2>Recent Orders</h2>
+              <a href="#" class="btn">View All</a>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <td>name</td>
+                  <td>price</td>
+                  <td>Payment</td>
+                  <td>Status</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Star Refrigerator</td>
+                  <td>$1200</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                  <td>Window Coolers</td>
+                  <td>$110</td>
+                  <td>Due</td>
+                  <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>Speakers</td>
+                  <td>$620</td>
+                  <td>Paid</td>
+                  <td><span class="status return">Return</span></td>
+                </tr>
+                <tr>
+                  <td>Hp laptop</td>
+                  <td>$6000</td>
+                  <td>Due</td>
+                  <td><span class="status inProgress">In Progress</span></td>
+                </tr>
+                <tr>
+                  <td>Star Refrigerator</td>
+                  <td>$1200</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                  <td>Window Coolers</td>
+                  <td>$110</td>
+                  <td>Due</td>
+                  <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>Speakers</td>
+                  <td>$620</td>
+                  <td>Paid</td>
+                  <td><span class="status return">Return</span></td>
+                </tr>
+                <tr>
+                  <td>Hp laptop</td>
+                  <td>$6000</td>
+                  <td>Due</td>
+                  <td><span class="status inProgress">In Progress</span></td>
+                </tr>
+                <tr>
+                  <td>Apple Watch</td>
+                  <td>$680</td>
+                  <td>Paid</td>
+                  <td><span class="status delivered">Delivered</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="recentCustomer">
+            <div class="cardHeader">
+              <h2>Recent Customers</h2>
+            </div>
+            <table>
+              <tbody>
+                <tr>
+                  <td width="60px"><div class="imgBx"><img src="image/customer-1.jpg"></div></td>
+                  <td><h4>Laila<br><span>Italy</span></h4></td>
+                </tr>
+                <tr>
+                  <td width="60px"><div class="imgBx"><img src="image/customer-2.jpg"></div></td>
+                  <td><h4>Nada<br><span>Spanish</span></h4></td>
+                </tr>
+                <tr>
+                  <td width="60px"><div class="imgBx"><img src="image/customer-3.jpg"></div></td>
+                  <td><h4>Jana<br><span>France</span></h4></td>
+                </tr>
+                <tr>
+                  <td width="60px"><div class="imgBx"><img src="image/customer-4.jpg"></div></td>
+                  <td><h4>Christen<br><span>USA</span></h4></td>
+                </tr>
+                <tr>
+                  <td width="60px"><div class="imgBx"><img src="image/customer-5.jpg"></div></td>
+                  <td><h4>Nizko<br><span>China</span></h4></td>
+                </tr>
+                <tr>
+                  <td width="60px"><div class="imgBx"><img src="image/customer-6.jpg"></div></td>
+                  <td><h4>David<br><span>Brazil</span></h4></td>
+                </tr>
+                <tr>
+                  <td width="60px"><div class="imgBx"><img src="image/customer-7.jpg"></div></td>
+                  <td><h4>Simon<br><span>Italy</span></h4></td>
+                </tr>
+                <tr>
+                  <td width="60px"><div class="imgBx"><img src="image/customer-8.jpg"></div></td>
+                  <td><h4>Ragi<br><span>India</span></h4></td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.1.1/chart.min.js" integrity="sha512-MC1YbhseV2uYKljGJb7icPOjzF2k6mihfApPyPhEAo3NsLUW0bpgtL4xYWK1B+1OuSrUkfOTfhxrRKCz/Jp3rQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
